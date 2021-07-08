@@ -31,7 +31,7 @@ void solve(void){
     ll n,m,a,d; cin >> n >> m >> a >> d;
     vector<ll> dv{a, a+d, a+2*d, a+3*d, a+4*d};
     
-    --n; // use n+1 in last
+    --n; // use n+1 in last.
     ll suM = inclusion_exclusion(dv,m);
     ll suN = inclusion_exclusion(dv,n);
     ll n_to_m = suM-suN;
